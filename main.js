@@ -50,23 +50,23 @@ function gotResult(error, results) {
         prediction_1 = results[0].label;
         prediction_2 = results[1].label;
         speak();
-        if (results[0].label == "happy") {
-            document.getElementById("update_emoji").innerHTML = "&#128522;";
+        if (results[0].label == "thumps up") {
+            document.getElementById("update_emoji").innerHTML = "&#128077;";
         }
-        if (results[0].label == "sad") {
-            document.getElementById("update_emoji").innerHTML = "&#128532;";
+        if (results[0].label == "poor") {
+            document.getElementById("update_emoji").innerHTML = "&#128078;";
         }
-        if (results[0].label == "angry") {
-            document.getElementById("update_emoji").innerHTML = "&#128548;";
+        if (results[0].label == "sawg") {
+            document.getElementById("update_emoji").innerHTML = "&#129304;";
         }
-        if (results[1].label == "happy") {
-            document.getElementById("update_emoji2").innerHTML = "&#128522;";
+        if (results[1].label == "thumps up") {
+            document.getElementById("update_emoji2").innerHTML = "&#128077;";
         }
-        if (results[1].label == "sad") {
-            document.getElementById("update_emoji2").innerHTML = "&#128532;";
+        if (results[1].label == "poor") {
+            document.getElementById("update_emoji2").innerHTML = "&#128078;";
         }
-        if (results[1].label == "angry") {
-            document.getElementById("update_emoji2").innerHTML = "&#128548;";
+        if (results[1].label == "sawg") {
+            document.getElementById("update_emoji2").innerHTML = "&#129304;";
         }
     }
 }
